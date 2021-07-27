@@ -14,7 +14,6 @@ yarn
 yarn dev
 
 ## Built With
-
 * [Next.js](https://nextjs.org/) - Server side rendering React with node
 * [React](https://reactjs.org/) - Library for building interfaces
 * [Styled-Components](https://styled-components.com/) - styled-components is the result of wondering how we could enhance CSS for styling React component systems.
