@@ -51,9 +51,9 @@ export default function SliderComponent() {
             <Container>
                 <div>
                     <Slider {...settings}>
-                        {Images.map((item) => {
+                        {Images.map((item, index) => {
                             return(
-                                <S.Img src={item.url} alt={item.alt}/>
+                                <S.Img src={item.url} alt={item.alt} key={index}/>
                             )
                         })}
                     </Slider>

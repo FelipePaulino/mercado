@@ -13,7 +13,6 @@ export default function Home({isLogged}) {
 
   useEffect(() => {
     axios.get(url).then((res) => {
-      console.log(res.data, 'data')
 
       const filterProducts = res.data.filter(item =>{
         return item !== null 

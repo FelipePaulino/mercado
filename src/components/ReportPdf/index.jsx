@@ -45,14 +45,12 @@ const MyPdf = ({ data, total }) => (
 
       <View>
         <Text style={style.title}>Produto</Text>
-        {data?.map(item => {
+        {data?.map((item, index) => {
           return (
-            <>
-              <View style={style.flex}>
+              <View style={style.flex} key={index}>
                 <Text>{item.name}</Text>
                 <Text>{item.price}</Text>
               </View>
-            </>
           )
         })}
 

@@ -25,9 +25,9 @@ export default function Header({isLogged }) {
 
           <S.Nav>
             <ul>
-              {Data.map((items) => {
+              {Data.map((items, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <a href={items.url}>{items.page}</a>
                   </li>
                 );

@@ -12,8 +12,6 @@ export default function Products({ result, isLogged }) {
         setCheck(prev => !prev)
     }
 
-    console.log(isLogged, 'isLogged')
-
     const url = "https://mercadofruta-6090b-default-rtdb.firebaseio.com/frutas/checkout.json"
 
     const addCheckout = (data) =>{
